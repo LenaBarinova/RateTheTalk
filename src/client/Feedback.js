@@ -3,11 +3,6 @@ import { Chart } from 'react-google-charts';
 
 class Feedback extends Component {
   render() {
-    var chartData = [
-      ['Feedback', 'Count', { 'role': 'style' }],
-      ['OK', 20, 'color:#8cd790'],
-      ['KO', 5, 'color:#f06292']];
-
     var options = {
       'title': 'Feedback',
       'bar': { 'groupWidth': '95%' },
@@ -22,7 +17,7 @@ class Feedback extends Component {
     return (
       <Chart
         chartType='BarChart'
-        data={chartData}
+        data={this.props.data}
         options={options}
         graph_id='BarChart'
         width={'100%'}
