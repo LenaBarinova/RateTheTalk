@@ -6,6 +6,8 @@ import { connect } from 'react-redux';
 class App extends Component {
   render() {
     const content = this.props.content;
+    // const fetchFeedback = this.props.fetchFeedback;
+    // fetchFeedback();
 
     return (
       <div className="App">
@@ -20,6 +22,5 @@ class App extends Component {
 }
 
 module.exports = connect(
-  (state) => ({content: state.content})
-  //(dispatch) => ({switchLanguage: (lang) => dispatch(actions.switchLanguage(lang))})
+  (state) => ({ content: state.content })
 )(App);

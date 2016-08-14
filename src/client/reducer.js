@@ -1,12 +1,18 @@
-//import action_types from './action-types';
-import api from './api';
+import action_types from './action-types';
 
 const initialState = {
-  content: api.getFeedback() // loads feedback
+  content: [['Feedback', 'Count', { 'role': 'style' }], ['OK', 0], ['KO', 0]]
 };
 
 let reducer = function (state = initialState, action) {
-    return state;
+  switch (action.type) {
+    case action_types.RECEIVE_FEEDBACK:
+      return {
+        content: action.data
+      };
+    default:
+      return state;
+  }
 };
 
 module.exports = reducer;

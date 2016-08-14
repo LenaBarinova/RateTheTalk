@@ -14,16 +14,20 @@ class Feedback extends Component {
         'fontName': 'Raleway'
       }
     };
-    return (
-      <Chart
-        chartType='BarChart'
-        data={this.props.data}
-        options={options}
-        graph_id='BarChart'
-        width={'100%'}
-        height={'400px'}>
-      </Chart>
-    );
+    if (this.props.data) {
+      return (
+        <Chart
+          chartType='BarChart'
+          data={this.props.data}
+          options={options}
+          graph_id='BarChart'
+          width={'100%'}
+          height={'400px'}>
+        </Chart>
+      )
+    }
+    else
+      return null;
   }
 }
 
