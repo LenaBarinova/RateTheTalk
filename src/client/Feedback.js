@@ -19,7 +19,15 @@ class Feedback extends Component {
           'color': '#2E294E',
           'fontSize': 20,
           'fontName': 'Raleway'
-        }
+        },
+        'title': 'Number of responses',
+        'titleTextStyle': {
+          'color': '#2E294E',
+          'fontSize': 20,
+          'fontName': 'Raleway'
+        },
+        'minValue': 0,
+        'maxValue': 15
       },
       'vAxis': {
         'textStyle': {
