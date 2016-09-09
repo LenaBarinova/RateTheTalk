@@ -17,7 +17,7 @@ let api = {
       if (response && response.stats) {
         stats = response.stats.map(obj => {
           return [
-            obj.response,
+            obj.count.toString() + ' say ' + obj.response,
             obj.count,
             obj.response === 'OK' ? 'color:#8cd790' : 'color:#f06292'
           ]

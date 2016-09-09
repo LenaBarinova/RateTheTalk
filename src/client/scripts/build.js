@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'development';
 
 var chalk = require('chalk');
 var fs = require('fs');

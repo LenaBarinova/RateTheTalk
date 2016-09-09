@@ -7,11 +7,27 @@ class Feedback extends Component {
       'title': 'Feedback',
       'bar': { 'groupWidth': '95%' },
       'legend': { 'position': 'none' },
+      'tooltip': {'trigger': 'none'},
       'backgroundColor': '#FFFFFF',
       'titleTextStyle': {
         'color': '#2E294E',
         'fontSize': 40,
         'fontName': 'Raleway'
+      },
+      'hAxis': {
+        'textStyle': {
+          'color': '#2E294E',
+          'fontSize': 20,
+          'fontName': 'Raleway'
+        }
+      },
+      'vAxis': {
+        'textStyle': {
+          'color': '#2E294E',
+          'fontSize': 20,
+          'fontName': 'Raleway',
+          'bold': true
+        }
       }
     };
     if (this.props.data) {

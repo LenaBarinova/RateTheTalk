@@ -39,7 +39,7 @@ if (isInCreateReactAppSource) {
     appBuild: resolveApp('src/client/build'),
     appHtml: resolveApp('src/client/index.html'),
     appFavicon: resolveApp('src/client/favicon.ico'),
-    appPackageJson: resolveApp('../package.json'),
+    appPackageJson: resolveApp('./package.json'),
     appSrc: resolveApp('src/client'),
     appNodeModules: resolveApp('../node_modules'),
     // this is empty with npm3 but node resolution searches higher anyway:
