@@ -1,7 +1,7 @@
 import action_types from './action-types';
 import api from './api';
 
-const POLLING_INTERVAL = 60000;
+const POLLING_INTERVAL = 600;
 
 // Once feedback is received - updated state for received stats to be shown on a chart
 function receiveFeedback(stats) {

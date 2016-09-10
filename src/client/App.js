@@ -6,8 +6,6 @@ import { connect } from 'react-redux';
 class App extends Component {
   render() {
     const content = this.props.content;
-    // const fetchFeedback = this.props.fetchFeedback;
-    // fetchFeedback();
 
     return (
       <div className="App">
